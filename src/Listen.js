@@ -26,7 +26,9 @@ function Listen() {
             <h1>colors</h1>
             <ul>
                 { colors.map((color, idx) =>
-                    <li style={{color: color.html}} key={idx}>{color.title}</li>)}
+                    <li style={{color: color.html}} key={idx}>{color.title}</li>)
+
+                }
             </ul>
             <input value={newColor} onChange={e => setNewColor(e.target.value)} /><br/>
             <button onClick={addColor}>add</button>

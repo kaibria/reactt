@@ -10,12 +10,22 @@ import Listen from "./Listen";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Bootstrap from "./Bootstrap";
 import FormbootstrapBeispiel from "./FormbootstrapBeispiel";
+import GridBootstrap from "./GridBootstrap";
+import TwoLists from "./TwoLists";
+import API from "./API";
+import Deckofcard from "./Deckofcard";
+import SbbAPI from "./SbbAPI";
+import Stationboard from "./Stationboard";
+import { BrowserRouter, Switch, Route, NavLink, Link } from 'react-router-dom';
 
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Listen />
+      <BrowserRouter>
+          <App />
+
+      </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
